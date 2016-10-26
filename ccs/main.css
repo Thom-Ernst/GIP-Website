@@ -9,9 +9,8 @@ body {
 }
 
 .pure-img-responsive-background {
-    max-width: 100%;
+    max-width: 65%;
     height: auto;
-    z-index: -1;
 }
 
 #layout,
@@ -127,18 +126,13 @@ body {
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #ff3300;
+        background: #f30;
     }
-        /*
-        This styles a link within a selected menu item `<li>`.
-        */
         #menu .pure-menu-selected a {
             color: #fff;
         }
 
-    /*
-    This styles the menu heading.
-    */
+
     #menu .pure-menu-heading {
         font-size: 110%;
         color: #fff;
@@ -152,10 +146,6 @@ The button to open/close the Menu is custom-made and not part of Pure. Here's
 how it works:
 */
 
-/*
-`.menu-link` represents the responsive menu toggle that shows/hides on
-small screens.
-*/
 .menu-link {
     position: fixed;
     display: block;
@@ -183,7 +173,7 @@ small screens.
     .menu-link span:before,
     .menu-link span:after {
         background-color: #fff;
-        width: 90%;
+        width: 80%;
         height: 0.2em;
     }
 
@@ -191,7 +181,7 @@ small screens.
         .menu-link span:after {
             position: absolute;
             margin-top: -0.6em;
-            content: "  ";
+            content:"";
         }
 
         .menu-link span:after {
@@ -199,11 +189,6 @@ small screens.
         }
 
 
-/* -- Responsive Styles (Media Queries) ------------------------------------- */
-
-/*
-Hides the menu at `48em`.
-*/
 @media (min-width: 60em) {
 
     .header,
@@ -232,8 +217,7 @@ Hides the menu at `48em`.
 }
 
 @media (max-width: 48em) {
-    /* Only apply this when the window is small. Otherwise, the following
-    case results in extra padding on the left:
+    /* 
         * Make the window small.
         * Tap the menu to trigger the active state.
         * Make the window large again.

@@ -1,5 +1,9 @@
 body {
     color: #222;
+    background: url(/img/background2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .pure-img-responsive {

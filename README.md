@@ -47,3 +47,10 @@ _____
 * lorem ipsum
 
 * dolor sit amet
+
+## Updatelist
+
+* 8/11
+ * een andere achtergrond afbeelding en ervoor gezorgd dat deze niet verdwijnt of te veel verandert met herschalen browser
+ * favicon toegevoegd
+ * probleem met de sidebar die een scrollbar vertoonde

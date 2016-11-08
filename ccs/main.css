@@ -1,9 +1,10 @@
 body {
-    color: #222;
+    color: #FFF;
     background: url(/img/background2.png);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 110%;
+    background-repeat: repeat-y;
 }
 
 .pure-img-responsive {
@@ -13,7 +14,7 @@ body {
 }
 
 .pure-img-responsive-background {
-    max-width: 65%;
+    max-width: 5%;
     height: auto;
 }
 
@@ -75,14 +76,14 @@ body {
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 300;
-    color: #555;
+    color: #FFF;
 }
 
 
 
 #menu {
     margin-left: -150px;
-    width: 135px;
+    width: 155px;
     position: fixed;
     top: 0;
     left: 0;

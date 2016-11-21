@@ -1,6 +1,6 @@
 body {
     color: #FFF;
-    background: url(/img/background2.jpg);
+    background: url(img/background2.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 110%;
@@ -55,7 +55,6 @@ body {
      color: #333;
      text-align: center;
      padding: 2.5em 2em 0;
-     border-bottom: 1px solid #eee;
  }
     .header h1 {
         margin: 0.2em 0;
@@ -63,8 +62,8 @@ body {
         font-weight: 300;
         font: 400 82px/1.2 'Merienda One', Helvetica, sans-serif;
         color: rgba(120,5,1,10.7);
-        text-shadow: 3px 3px 3px #fff;
-    }
+        text-shadow: 3px 3px 30px #F81;
+}
      .header h2 {
         font-weight: 300;
         color: #F80;
@@ -76,14 +75,13 @@ body {
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 300;
-    color: #FFF;
+    color: #FFF; /* Ik krijg de kleur van mijn letters niet wit - help?? */
 }
-
 
 
 #menu {
     margin-left: -150px;
-    width: 155px;
+    width: 150px;
     position: fixed;
     top: 0;
     left: 0;
@@ -231,4 +229,17 @@ how it works:
         position: relative;
         left: 150px;
     }
+}
+
+@font-face {
+    font-family: fa;
+    src: url(.\vendor\font-awesome\css\font-awesome.min.css);
+}
+
+iframe {
+    height: 120em;
+    width: 100%;
+    /* box-shadow:0px 0px 50px #F60; */
+    padding-left: 10px;
+    padding-right: 10px;
 }

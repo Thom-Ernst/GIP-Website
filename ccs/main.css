@@ -50,13 +50,13 @@ body {
     line-height: 1.6em;
 }
 
-header {
+.header {
      margin: 0;
      color: #333;
      text-align: center;
      padding: 2.5em 2em 0;
  }
-    header h1 {
+    .header h1 {
         margin: 0.2em 0;
         font-size: 3em;
         font-weight: 300;
@@ -64,7 +64,7 @@ header {
         color: rgba(120,5,1,10.7);
         text-shadow: 3px 3px 30px #F81;
 }
-     header h2 {
+     .header h2 {
         font-weight: 300;
         color: #F80;
         padding: 0;
@@ -75,7 +75,7 @@ header {
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 300;
-    color: #FFF; /* Ik krijg de kleur van mijn letters niet wit - help?? */
+    color: #FFF;
 }
 
 
@@ -236,10 +236,10 @@ how it works:
     src: url(.\vendor\font-awesome\css\font-awesome.min.css);
 }
 
-iframe {
+#page-iframe {
     height: 120em;
     width: 100%;
-    /* box-shadow:0px 0px 50px #F60; */
+    box-shadow:3px 3px 3px #F60;
     padding-left: 10px;
     padding-right: 10px;
 }

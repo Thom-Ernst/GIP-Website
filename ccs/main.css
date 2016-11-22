@@ -14,7 +14,7 @@ body {
 }
 
 .pure-img-responsive-background {
-    max-width: 5%;
+    max-width: 7%;
     height: auto;
 }
 
@@ -51,12 +51,13 @@ body {
 }
 
 .rounded {
-    border-top-left-radius:15%;
-    border-top-right-radius:15%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    border-top-left-radius:20vw;
+    border-top-right-radius:20vw;
+    padding-top: 35px;
     overflow: hidden;
 }
+
+
 
 .header {
      margin: 0;
@@ -245,7 +246,7 @@ how it works:
 }
 
 #page-iframe {
-    height: 80em;
+    height: 50em;
     width: 100%;
     /*box-shadow:0px 0px 40px #F60;*/
     padding-left: 10px;

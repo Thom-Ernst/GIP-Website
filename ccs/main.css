@@ -242,7 +242,7 @@ how it works:
 
 @font-face {
     font-family: fa;
-    src: url(.\vendor\font-awesome\css\font-awesome.min.css);
+    src: url(..\vendor\font-awesome\css\font-awesome.css);
 }
 
 #page-iframe {

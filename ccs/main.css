@@ -1,6 +1,6 @@
 body {
     color: #FFF;
-    background: url(img/background2.jpg);
+    background: url(../img/background2.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 110%;
@@ -242,4 +242,8 @@ how it works:
     box-shadow:3px 3px 3px #F60;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+footer {
+    text-align: center;
 }

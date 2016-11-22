@@ -50,6 +50,14 @@ body {
     line-height: 1.6em;
 }
 
+.rounded {
+    border-top-left-radius:15%;
+    border-top-right-radius:15%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
 .header {
      margin: 0;
      color: #333;
@@ -62,7 +70,7 @@ body {
         font-weight: 300;
         font: 400 82px/1.2 'Merienda One', Helvetica, sans-serif;
         color: rgba(120,5,1,10.7);
-        text-shadow: 3px 3px 30px #F81;
+        text-shadow: 3px 3px 8px #F50;
 }
      .header h2 {
         font-weight: 300;
@@ -237,9 +245,9 @@ how it works:
 }
 
 #page-iframe {
-    height: 120em;
+    height: 80em;
     width: 100%;
-    box-shadow:3px 3px 3px #F60;
+    /*box-shadow:0px 0px 40px #F60;*/
     padding-left: 10px;
     padding-right: 10px;
 }

@@ -1,0 +1,343 @@
+/* unvisited link */
+a.credit:link {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+/* visited link */
+a.credit:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a.credit:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* selected link */
+a.credit:active {
+    color: #fff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #my-content { display: block;      background: rgba(0,0,0,0.8);
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10000; }  /* show it on small screens */
+
+      
+}
+
+@media screen and (min-width: 401px) {
+  #my-content { display: none; }   /* hide it elsewhere */
+}
+
+#sorry{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}​
+
+#twitter {
+  top: 20px;
+    position: fixed;
+    left: 20px;
+}
+
+
+#kim {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    text-transform: uppercase;
+  color: white;
+   
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#f396b0; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:400px;
+    height:400px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(http://walker.kim/drakedisco/loading3.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-200px 0 0 -200px; /* is width and height divided by two */
+}
+
+
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+align-items: flex-start;
+text-align: center;
+cursor: default;
+padding: 2px 6px 3px;
+border: 0px outset buttonface;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+background-color: transparent;
+box-sizing: border-box;
+}
+
+#wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Wobble Vertical */
+@-webkit-keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.wobble-vertical {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble-vertical:hover, .wobble-vertical:focus, .wobble-vertical:active {
+  -webkit-animation-name: wobble-vertical;
+  animation-name: wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+  #image {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  z-index: -9999;
+   background-size: cover;
+  }
+
+  #next {
+  z-index: -9999;
+  text-align: center;
+
+   display:inline-block;
+  }
+
+   #nextsong {
+  z-index: -9999;
+  text-align: center;
+background-color: transparent !important; 
+   display:inline-block;
+  }
+
+.border {
+  display: inline-block;
+  padding: 14px;
+  margin: 10px;
+  background-color: #f396b0;
+
+    
+  /* Font styles */
+  text-decoration: none;
+ 
+  text-transform: uppercase;
+  color: white;
+   font-size: 1.6em;
+   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+ }
+
+.border:hover  { border-color: white; background-color: #ff4d7f; color:white; }
+.border:active { border-color: white; background-color: #ff4d7f; color:#f396b0;}
+
+  #header {
+
+ margin:0px auto;
+ height: 50px;
+ text-align: center;
+ margin-top: 20px;
+     font-size: 3em;
+   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    font-style: italic;
+  }
+
+  h1 {
+    font-size: 3em;
+   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    font-style: italic;
+  }
+
+    h2 {
+    font-size: 1.5em;
+   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+    font-style: italic;
+  }
+
+  h3 {
+    font-size: .65em;
+   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: #333;
+    font-style: italic;
+  }
+
+
+
+body{
+    margin:0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    background:#000;
+     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#footer
+{
+    clear: both;
+    color: White;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#credit
+{
+    clear: both;
+    color: black;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+
+     /* Font styles */
+  text-decoration: none;
+  text-transform: uppercase;
+   font-size: .75em;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Drake Disco">
+    <title>Drake Disco</title>
+    <link charset="utf-8" href="../vendor/drakestyle.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #imagewrapper {
+            text-align: center;
+        }
+            #imagewrapper img {
+                display: inline-block;
+                margin: 0;
+            }
+        #hide {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script src="../vendor/jquery.min.js"></script>
+    <script>
+        function showhide() {
+            var div = document.getElementById("my-content");
+            if (div.style.display !== "none") {
+                div.style.display = "none";
+            }
+            else {
+                div.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Preloader --><div id="imagewrapper">
+        <div id="preloader">
+            <div id="status">
+                &nbsp;
+            </div>
+        </div>
+        <img src="../img/Disco_ball.gif" alt="Mirror Ball" style="width:150px;height:172px;top:0;">
+    </div>
+    <div id="my-content">
+        <div id="sorry">
+            <h2>
+                no audio on mobile, sorry :(
+                <br>
+                <br>
+                <img src="../img/drake_tears.png" alt="Drake Disco" height="100" width="auto">
+            </h2><button class="border wobble-vertical" id="button" onclick="showhide()">Whatever</button>
+        </div>
+    </div>
+    <div id="soundcloud_player">
+        <div id="hide">
+            <iframe height="450" id="soundcloud_player_iframe" name="soundcloud_player_iframe" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/270458538"width="480">
+            </iframe>
+        </div>
+        <br>
+        <script id="jsbin-javascript">
+            var widget = null;
+            var song_indexes = [];
+            var current_index = 0;
+
+            $(function () {
+                var iframe = document.querySelector('#soundcloud_player iframe');
+                widget = SC.Widget(iframe);
+                widget.bind(SC.Widget.Events.READY, function () {
+                    widget.bind(SC.Widget.Events.FINISH, function () {
+                        play_next_shuffled_song();
+                    });
+
+                    widget.getSounds(function (sounds) {
+                        create_shuffled_indexes(sounds.length);
+                        play_next_shuffled_song();
+                    });
+                });
+                $("#button_sc_next").on("click", play_next_shuffled_song);
+            });
+
+            function play_next_shuffled_song() {
+                if (current_index >= song_indexes.length) {
+                    current_index = 0;
+                }
+                var track_number = song_indexes[current_index];
+                current_index++;
+                widget.skip(track_number);
+                console.log(track_number);
+            }
+
+            function create_shuffled_indexes(num_songs) {
+                for (var i = 0; i < num_songs; i++) {
+                    song_indexes.push(i);
+                }
+                song_indexes = shuffle(song_indexes);
+            }
+
+            //+ Jonas Raoni Soares Silva
+            //@ http://jsfromhell.com/array/shuffle [v1.0]
+            function shuffle(o) { //v1.0
+                for (var j, x, i = o.length; i; j = parseInt((Math.random() * i), 10), x = o[--i], o[i] = o[j], o[j] = x);
+                return o;
+            }
+        </script><div id="image"></div><div id="footer">
+            <div id="wrapper">
+                <div id="next">
+                    <a class="border wobble-vertical" href="javascript:void"
+                       id="next">ANOTHER MOVE</a>
+                </div><div id="nextsong">
+                    <button class="border wobble-vertical" id="button_sc_next">
+                        ANOTHER GROOVE
+                    </button>
+                </div>
+            </div>
+        </div><!-- Preloader -->
+        <script type="text/javascript">
+            //<![CDATA[
+            $(window).load(function () { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({ 'overflow': 'visible' });
+            })
+            //]]></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/audiojs/0.1/audio.js"></script>
+        <script type="text/javascript">
+            var urls = [
+                    "../img/gifs/0fa6c6d6f9c9.gif",
+                    "../img/gifs/Stalin_Jamming.gif",
+                    "../img/gifs/tumblr_n13smh0dRl1rp6ailo1_250.gif",
+                    "../img/gifs/tumblr_niu4h5kP2n1sel756o1_250.gif",
+                    "../img/gifs/E8Ng9Zz.gif",
+                    "../img/gifs/gandalf.gif"
+            ];
+
+            $("#next").click(chooseNext);
+
+            function chooseNext(e) {
+                var randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+                $("#image").css("background-image", "url('" + randomUrl + "')");
+
+                return false;
+            }
+            chooseNext();
+        </script>
+    </div><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe>
+    <script type="text/javascript">
+        (function () {
+            var analytics_frame = document.getElementById('ga_target');
+            var analytics_iframe_loaded;
+            var user_logged_in;
+            var blog_is_nsfw = 'No';
+            var addthis_enabled = false;
+
+            var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+            var eventer = window[eventMethod];
+            var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+            eventer(messageEvent, function (e) {
+                var message = (e.data && e.data.split) ? e.data.split(';') : '';
+                switch (message[0]) {
+                    case 'analytics_iframe_loaded':
+                        analytics_iframe_loaded = true;
+                        postCSMessage();
+                        postGAMessage();
+                        postATMessage();
+                        postRapidMessage();
+                        break;
+                    case 'user_logged_in':
+                        user_logged_in = message[1];
+                        postGAMessage();
+                        postATMessage();
+                        break;
+                }
+            }, false);
+        })();
+    </script>
+    <script type="text/javascript">
+        !function (s) { s.src = 'https://px.srvcs.tumblr.com/impixu?T=1480006264&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvZHJha2VkaXMuY29cLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC8ifQ==&U=HAGDLLHIOM&K=f6af875785dd61cc8682149df15c31f96146c3bcac08c0cb845d7f3562fc3472&R='.replace(/&R=[^&$]*/, '').concat('&R=' + escape(document.referrer)).slice(0, 2000).replace(/%.?.?$/, ''); }(new Image());
+    </script>
+    <noscript>
+        <img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1480006264&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvZHJha2VkaXMuY29cLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC8iLCJub3NjcmlwdCI6MX0=&U=HAGDLLHIOM&K=df98f7c90340203e0b4d65848314f2fd5c6051882676202dd9be811fddcef09a&R=">
+    </noscript>
+</body>
+</html>

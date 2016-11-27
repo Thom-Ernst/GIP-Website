@@ -253,6 +253,12 @@ how it works:
     padding-right: 10px;
 }
 
+#game-iframe {
+    border : none;
+    width : 665px;
+    height : 520px;
+}
+
 footer {
     text-align: center;
 }

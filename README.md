@@ -4,41 +4,49 @@
 - - -
 __Wat kan je vinden in deze versie van mijn website?__
 
-* __Een _index.html_ voor mijn website__
-_____
-   * Sjabloon voor de andere pagina's
-   * De enige webpagina die eigenlijk wordt bezocht, al de rest gebeurt via iframes
-
+* __Een _index.html_ dat linkt naar alle andere documenten met een responsief menu, deze pagina's laden dan in een iframe__
+    * De enige webpagina die eigenlijk wordt bezocht, al de rest gebeurt via iframes
+* __Lijst met GIP-taken__
+* __IT-profile__
+* __IT-tapa__
+* __Disco__
+* __Game__
+   
 * __CSS__
 _____
     * Veel css komt van _Pure_
 
     * Maakt gebruik van font awesome voor een reeks incoontjes
 
-    * Deels geen gebruik van pixels in de opmaak
+    * Deels geen gebruik van _px_ in de opmaak
 
-    * Vervangen door _em_'s als relatieve lengte
+    * Vervangen door _em_ als relatieve lengte
 
     * Aangepaste versie van de "_dynamic button and responsive menu_" css voor persoonlijke stijl
+    
+    * De folder vendor is een locatie waar ik alle bestanden steek die ik link in mijn website, maar die niet van mezelf zijn of aangepast zijn, dus van 3den
     
     * ## Links:
      * [main.css](https://github.com/ThomE-immalle/GIP-Website/blob/master/ccs/main.css)
      * [Responsive side-menu](https://github.com/ThomE-immalle/GIP-Website/blob/master/ccs/main.css#L145)
+     * [vendor](https://github.com/ThomE-immalle/GIP-Website/blob/master/vendor)
 
 * __HTML__
 _____
     * de inhoud van elke pagina wordt gedisplayed in een iframe ipv aparte html bestanden
     
-    * html5 elementen voor head, main en footer
+    * html5 elementen voor head, main en footer, nav, en nog wat andere items
     
-    * voorlopig enkel lorem ipsum, content zal worden toegevoegd in de toekomst
+    * placeholder tekst zal worden aangevuld naargelang gip-taken worden afgemaakt
     
-    * elementen zullen worden toegevoegd aan het _responsive menu_ naargelang ik GIP-taken krijg
+    * elementen in het responsive-menu linken naar de iframe-bestanden, sommige gebruiken font-awesome, andere iconen zijn zelf gemaakt
+    
+    * de game past live de inhoud van het iframe aan, als je [het spel](http://3d.wolfenstein.com/game/wolf3d.html) bekijkt in de inspector kan je helemaal zien hoe het spel reageert met de html
     
 * __JS__
- * De enige Javascript die hier te vinden is voorlopig is die van het responsive menu
- * [MenuJS](https://github.com/ThomE-immalle/GIP-Website/blob/master/js/MenuJs.js)
-
+ * Responsief zij-menu [MenuJS](https://github.com/ThomE-immalle/GIP-Website/blob/master/js/MenuJs.js)
+ * Er zit javascript en jquery in de disco module, ik heb deze niet zelf geschreven, maar wel helemaal doornomen. Ik heb hier veel uit bijgeleerd (vooral de jquery dom structuur)
+ * Er zit javascript in het spel, deze heb ik ook doornomen, het interessante is dat bijna alles in een apart .js bestand zit, elke control, functie...
 
 ## Dingen die ik kwijt wil over het maken van mijn website
 
@@ -46,7 +54,9 @@ _____
 
 * Ik ben van plan om in de toekomst zelfgemaakte _svg_'s toe te voegen op de website per GIP-project, als een soort van aanvulling op mijn opleiding van digitaal tekenen
 
-* Ik heb ongelooflijk veel last met het filesysteem dat gehanteerd wordt, ik ben hier dan ook lang mee bezig geweest om alles in orde te krijgen en/of alternatieven te vinden
+* Ik ben lang bezig geweest om alle bestanden te linken met https, uiteindelijk heb ik gewoon een domein aangemaakt en gebruikt mijn website http
+
+* De disco -en game-modules heb ik toegevoegd omdat ik vond dat de website niet genoeg respresenteerde hoe ik zelf ben, ze zijn er dus om de plaats een beetje op te beuren en om mezelf te motiveren om verder aan deze website te werken
 
 ## Updatelist
 
@@ -62,3 +72,10 @@ _____
  * bewerkingen aan het iframe-systeem
  * readme herbekeken en issues opgelost
  * html5-elementen toegevoeg (header, main, footer)
+* 27/11
+ * Branch merge tussen master en de testbranch
+  * Disco toegevoegd
+  * Game toegevoegd
+  * Readme geupdate
+  * IT-profile gemaakt
+  

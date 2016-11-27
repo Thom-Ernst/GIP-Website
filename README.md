@@ -71,11 +71,12 @@ _____
 * 21/11
  * bewerkingen aan het iframe-systeem
  * readme herbekeken en issues opgelost
- * html5-elementen toegevoeg (header, main, footer)
+ * html5-elementen toegevoegd (header, main, footer)
 * 27/11
  * Branch merge tussen master en de testbranch
   * Disco toegevoegd
   * Game toegevoegd
   * Readme geupdate
   * IT-profile gemaakt
+  * IT-tapa pagina-sjabloon aangemaakt
   

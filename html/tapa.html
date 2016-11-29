@@ -62,14 +62,31 @@
             width: 0px;  /* remove scrollbar space */
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script>$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});</script>
 </head>
 <body>
+    <i id="top"></i>
     <div style="text-align:center">
         <h2 class="content-subhead"><img src="../img/discord.png" style="width:40px;height:40px;"> IT-Tapa</h2>
             <nav>
                 <div>
-                    <a class="button-orange pure-button" href="tapa.html#presentatie">Presentatie</a>
-                    <a class="button-orange pure-button" href="tapa.html#FAQ">Foire aux Questions</a>
+                    <a class="button-orange pure-button smoothScroll" href="#presentatie">Presentatie</a>
+                    <a class="button-orange pure-button smoothScroll" href="#FAQ">Foire aux Questions</a>
                 </div>
             </nav>
     </div>
@@ -110,6 +127,6 @@
                 <img class="pure-img-responsive" src="../img/discord.png" alt="extra afbeeldingen">
             </div>
         </div>
-    <footer><a class="button-red pure-button" href="tapa.html#">To top</a></footer>
+    <footer><a class="button-red pure-button smoothScroll" href="#top"></footer>
 </body>
 </html>

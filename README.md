@@ -79,4 +79,8 @@ _____
   * Readme geupdate
   * IT-profile gemaakt
   * IT-tapa pagina-sjabloon aangemaakt
+* 29/11
+ * Smoothscroll toegevoegd
+ * To top buttons aangemaakt
+ * tweaks aan index.html
   

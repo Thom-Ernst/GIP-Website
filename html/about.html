@@ -64,20 +64,7 @@
     </style>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-    <script>$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});</script>
+<script src="../js/smoothscroll.js"></script>
 </head>
 <body>
     <i id="top"></i>
@@ -121,7 +108,7 @@
                         chart.draw(data, options);
                     }
                 </script>
-                <div id="languagechart"></div>
+                <div id="languagechart" style="width: 100vw; height: 60vw;"></div>
             </flex>
             <flex style="width:100%">
                 <script>
@@ -144,7 +131,7 @@
                         chart.draw(data, options);
                     }
                 </script>
-                <div id="operatingchart"></div>
+                <div id="operatingchart" style="width: 100vw; height: 60vw;"></div>
             </flex>
         </div>
     </div>

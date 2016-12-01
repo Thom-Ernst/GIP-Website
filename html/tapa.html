@@ -64,20 +64,7 @@
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-    <script>$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});</script>
+<script src="../js/smoothscroll.js"></script>
 </head>
 <body>
     <i id="top"></i>
@@ -127,6 +114,6 @@
                 <img class="pure-img-responsive" src="../img/discord.png" alt="extra afbeeldingen">
             </div>
         </div>
-    <footer><a class="button-red pure-button smoothScroll" href="#top"></footer>
+    <footer><a class="button-red pure-button smoothScroll" href="#top">To top</a></footer>
 </body>
 </html>

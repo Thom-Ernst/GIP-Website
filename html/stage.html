@@ -17,17 +17,49 @@
           href='..\vendor\font-awesome\css\font-awesome.css'
           type='text/css'>
     <link rel="stylesheet"
-          href="vendor/animate.css"
-          type="../text/css">
+          href="../vendor/animate.css"
+          type="text/css">
     
     <link rel="icon" 
       type="image/png" 
-      href="img/favicon.png">
+      href="../img/favicon.png">
     <style>
         body {
             color: white;
             background: url(../img/background-iframe.png);
             background-repeat: round;
+        }
+        .button-success,
+            .button-error,
+            .button-warning,
+            .button-secondary {
+                color: white;
+                border-radius: 4px;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+        .button-green {
+            background: rgb(28, 184, 65);
+        }
+        
+        .button-red {
+            background: rgb(202, 60, 60);
+        }
+        .button-orange {
+            background: rgb(223, 117, 20);
+        }
+        .button-blue {
+            background: rgb(32, 150, 221);
+        }
+
+        img {
+            max-width: 100%;
+        }
+        html {
+        overflow: scroll;
+        overflow-x: hidden;
+        }
+        ::-webkit-scrollbar {
+            width: 0px;  /* remove scrollbar space */
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
@@ -35,9 +67,111 @@
 <script src="../js/smoothscroll.js"></script>
 </head>
 <body>
-    <h2 class="content-subhead">header</h2>
-    <div>
-    
+    <i id="top"></i>
+    <div style="text-align:center">
+        <h2 class="content-subhead"><i class="fa fa-calendar-plus-o fa-2x animated rotateInDownLeft"></i> Stage</h2>
+            <nav>
+                <div>
+                    <a class="button-orange pure-button smoothScroll wobble-vertical" href="#verslag">Verslag</a>
+                    <a class="button-orange pure-button smoothScroll wobble-vertical" href="#analyse">Analyse</a>
+                    <a class="button-orange pure-button smoothScroll wobble-vertical" href="#reportage">Reportage photo</a>
+                    <a class="button-orange pure-button smoothScroll wobble-vertical" href="#review">Review of <i>[?]item[?]</i></a>
+                    <a class="button-blue pure-button wobble-vertical" href="https://www.gamemania.be/">Website van bedrijf</a>
+                </div>
+            </nav>
     </div>
-</body>
+    <div>
+        <h2 id="imgmenu" class="content-subhead"> Menu</h2>
+            <p>
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <a href="#dag1"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag2"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag3"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag4"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag5"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag6"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag7"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag8"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag9"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dag10"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#dankbrief"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+                <div class="pure-u-1-4">
+                    <a href="#reflectie"><img class="pure-img-responsive smoothScroll animated jello wobble-vertical" src="../img/coming.png" alt="extra afbeeldingen"></a>
+                </div>
+            </div>
+    </div>
+    <div style="margin-top:100px;background-color: #222;">
+        <h2 id="verslag" class="content-subhead"> Verslag</h2>
+        <div id="dag1">
+            <h3 class="content-subhead"> <b>Dag 1</b></h3>
+        </div>
+        <div id="dag2">
+            <h3 class="content-subhead"> <b>Dag 2</b></h3>
+        </div>
+        <div id="dag3">
+            <h3 class="content-subhead"> <b>Dag 3</b></h3>
+        </div>
+        <div id="dag4">
+            <h3 class="content-subhead"> <b>Dag 4</b></h3>
+        </div>
+        <div id="dag5">
+            <h3 class="content-subhead"> <b>Dag 5</b></h3>
+        </div>
+        <div id="dag6">
+            <h3 class="content-subhead"> <b>Dag 6</b></h3>
+        </div>
+        <div id="dag7">
+            <h3 class="content-subhead"> <b>Dag 7</b></h3>
+        </div>
+        <div id="dag8">
+            <h3 class="content-subhead"> <b>Dag 8</b></h3>
+        </div>
+        <div id="dag9">
+            <h3 class="content-subhead"> <b>Dag 9</b></h3>
+        </div>
+        <div id="dag10">
+            <h3 class="content-subhead"> <b>Dag 10</b></h3>
+        </div>
+        <div id="dankbrief">
+            <h3 class="content-subhead"> <b>Dankbrief</b></h3>
+        </div>
+        <div id="reflectie">
+            <h3 class="content-subhead"> <b>Reflectie</b></h3>
+        </div>
+    </div>
+    <div>
+        <h2 id="analyse" class="content-subhead"> Analyse</h2>
+    </div>
+    <div>
+        <h2 id="reportage" class="content-subhead"> Reportage photo</h2>
+    </div>
+    <div>
+        <h2 id="review" class="content-subhead"> Review of <i>[?]item[?]</i></h2>
+    </div>
+    <footer><a class="button-red pure-button smoothScroll wobble-vertical" style="margin-bottom: 15px" href="#top">To top</a></footer>
+    </body>
 </html>

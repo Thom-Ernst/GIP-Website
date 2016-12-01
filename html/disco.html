@@ -18,6 +18,9 @@
             opacity: 0;
         }
     </style>
+    <link rel="icon" 
+      type="image/png" 
+      href="../img/favicon.png">
     <script src="https://w.soundcloud.com/player/api.js"></script>
     <script src="../vendor/jquery.min.js"></script>
     <script>
@@ -44,7 +47,7 @@
     <div id="my-content">
         <div id="sorry">
             <h2>
-                no audio on mobile, sorry :(
+                Sorry for the bad visuals on mobile :&#40;
                 <br>
                 <br>
                 <img src="../img/drake_tears.png" alt="Drake Disco" height="100" width="auto">
@@ -146,36 +149,6 @@
             chooseNext();
         </script>
     </div><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe>
-    <script type="text/javascript">
-        (function () {
-            var analytics_frame = document.getElementById('ga_target');
-            var analytics_iframe_loaded;
-            var user_logged_in;
-            var blog_is_nsfw = 'No';
-            var addthis_enabled = false;
-
-            var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-            var eventer = window[eventMethod];
-            var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-            eventer(messageEvent, function (e) {
-                var message = (e.data && e.data.split) ? e.data.split(';') : '';
-                switch (message[0]) {
-                    case 'analytics_iframe_loaded':
-                        analytics_iframe_loaded = true;
-                        postCSMessage();
-                        postGAMessage();
-                        postATMessage();
-                        postRapidMessage();
-                        break;
-                    case 'user_logged_in':
-                        user_logged_in = message[1];
-                        postGAMessage();
-                        postATMessage();
-                        break;
-                }
-            }, false);
-        })();
-    </script>
     <script type="text/javascript">
         !function (s) { s.src = 'https://px.srvcs.tumblr.com/impixu?T=1480006264&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvZHJha2VkaXMuY29cLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC8ifQ==&U=HAGDLLHIOM&K=f6af875785dd61cc8682149df15c31f96146c3bcac08c0cb845d7f3562fc3472&R='.replace(/&R=[^&$]*/, '').concat('&R=' + escape(document.referrer)).slice(0, 2000).replace(/%.?.?$/, ''); }(new Image());
     </script>

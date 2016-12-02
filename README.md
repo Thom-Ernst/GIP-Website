@@ -6,9 +6,11 @@ __Wat kan je vinden in deze versie van mijn website?__
 
 * __Een _index.html_ dat linkt naar alle andere documenten met een responsief menu, deze pagina's laden dan in een iframe__
     * De enige webpagina die eigenlijk wordt bezocht, al de rest gebeurt via iframes
+* __Intro__
 * __Lijst met GIP-taken__
-* __IT-profile__
+* __Over Mezelf__
 * __IT-tapa__
+* __Stage__
 * __Disco__
 * __Game__
    
@@ -17,14 +19,20 @@ _____
     * Veel css komt van _Pure_
 
     * Maakt gebruik van font awesome voor een reeks incoontjes
+    
+    * Gebruik van grids voor bepaalde afbeeldingen, voornamelijk aangepast met _Pure_
 
-    * Deels geen gebruik van _px_ in de opmaak
+    * Deels geen gebruik van ``px`` in de opmaak
 
-    * Vervangen door _em_ als relatieve lengte
+    * Vervangen door ``em`` als relatieve lengte
 
     * Aangepaste versie van de "_dynamic button and responsive menu_" css voor persoonlijke stijl
     
     * De folder vendor is een locatie waar ik alle bestanden steek die ik link in mijn website, maar die niet van mezelf zijn of aangepast zijn, dus van 3den
+    
+    * Animate.css wordt gebruikt en is een library dat allerlei ``onload`` animaties voorziet
+    
+    * Daarbovenop is er een class ``wobble-vertical`` die buttons en andere elementen tot leven brengt
     
     * ## Links:
      * [main.css](https://github.com/ThomE-immalle/GIP-Website/blob/master/ccs/main.css)
@@ -35,7 +43,7 @@ _____
 _____
     * de inhoud van elke pagina wordt gedisplayed in een iframe ipv aparte html bestanden
     
-    * html5 elementen voor head, main en footer, nav, en nog wat andere items
+    * html5 elementen zoals ``head``, ``main``, ``footer``, ``nav``, en nog wat andere items
     
     * placeholder tekst zal worden aangevuld naargelang gip-taken worden afgemaakt
     
@@ -47,6 +55,22 @@ _____
  * Responsief zij-menu [MenuJS](https://github.com/ThomE-immalle/GIP-Website/blob/master/js/MenuJs.js)
  * Er zit javascript en jquery in de disco module, ik heb deze niet zelf geschreven, maar wel helemaal doornomen. Ik heb hier veel uit bijgeleerd (vooral de jquery dom structuur)
  * Er zit javascript in het spel, deze heb ik ook doornomen, het interessante is dat bijna alles in een apart .js bestand zit, elke control, functie...
+ * Het It-Profile wordt gemaakt met een google chart volledig in javascript deze ziet er zo uit: 
+                ```js
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+                    function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['onderdeel 1', 'percentage'],
+                            ['deel',           45],
+                            ['deel',       55],
+                        ]);
+                        var options = {
+                            title: 'titel'
+                        };
+                        var chart = new google.visualization.PieChart(document.getElementById('id-van-element'));
+                        chart.draw(data, options);
+                    } ```
 
 ## Dingen die ik kwijt wil over het maken van mijn website
 
@@ -83,4 +107,11 @@ _____
  * Smoothscroll toegevoegd
  * To top buttons aangemaakt
  * tweaks aan index.html
-  
+* 2/11
+ * ###Dit is een late update van de readme maar het omvat ongeveer wat ik deze week nog gedaan heb
+ * animaties aan allerlei elementen wanneer ze inladen of wanneer de muis erover gaat
+ * stage-pagina heeft een sjabloon
+ * IT-tapa pagina is afgewerkt
+ * aanpassingen aan de takenlijst - deze zal in de toekomst linken naar alle projecten
+ * link naar Axel zijn website was verkeerd, dit is opgelost
+ * ``hr`` elementen toegevoegd voor betere visuele details

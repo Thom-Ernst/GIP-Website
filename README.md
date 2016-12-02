@@ -115,3 +115,4 @@ _____
  * aanpassingen aan de takenlijst - deze zal in de toekomst linken naar alle projecten
  * link naar Axel zijn website was verkeerd, dit is opgelost
  * ``hr`` elementen toegevoegd voor betere visuele details
+ * v1.0 definitief afgewerkt

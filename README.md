@@ -85,37 +85,4 @@ chart.draw(data, options);
 
 * De disco -en game-modules heb ik toegevoegd omdat ik vond dat de website niet genoeg respresenteerde hoe ik zelf ben, ze zijn er dus om de plaats een beetje op te beuren en om mezelf te motiveren om verder aan deze website te werken
 
-## Updatelist
-
-* 8/11
- * een andere achtergrond afbeelding en ervoor gezorgd dat deze niet verdwijnt of te veel verandert met herschalen browser
- * favicon toegevoegd
- * probleem met de sidebar die een scrollbar vertoonde
-* 20/11
- * iframe gebruikt om de content op te laden ipv aparte html bestanden
- * afbeelding gecompresseerd
- * To-Do: buttons met iframe linken
-* 21/11
- * bewerkingen aan het iframe-systeem
- * readme herbekeken en issues opgelost
- * html5-elementen toegevoegd (header, main, footer)
-* 27/11
- * Branch merge tussen master en de testbranch
-  * Disco toegevoegd
-  * Game toegevoegd
-  * Readme geupdate
-  * IT-profile gemaakt
-  * IT-tapa pagina-sjabloon aangemaakt
-* 29/11
- * Smoothscroll toegevoegd
- * To top buttons aangemaakt
- * tweaks aan index.html
-* 2/11
- * ###Dit is een late update van de readme maar het omvat ongeveer wat ik deze week nog gedaan heb
- * animaties aan allerlei elementen wanneer ze inladen of wanneer de muis erover gaat
- * stage-pagina heeft een sjabloon
- * IT-tapa pagina is afgewerkt
- * aanpassingen aan de takenlijst - deze zal in de toekomst linken naar alle projecten
- * link naar Axel zijn website was verkeerd, dit is opgelost
- * ``hr`` elementen toegevoegd voor betere visuele details
- * v1.0 definitief afgewerkt
+# Deze readme zal ooit nog wel geupdate worden...

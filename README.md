@@ -56,22 +56,24 @@ _____
  * Er zit javascript en jquery in de disco module, ik heb deze niet zelf geschreven, maar wel helemaal doornomen. Ik heb hier veel uit bijgeleerd (vooral de jquery dom structuur)
  * Er zit javascript in het spel, deze heb ik ook doornomen, het interessante is dat bijna alles in een apart .js bestand zit, elke control, functie...
  * Het It-Profile wordt gemaakt met een google chart volledig in javascript deze ziet er zo uit: 
-                ```javascript
-                    google.charts.load('current', {'packages':['corechart']});
-                    google.charts.setOnLoadCallback(drawChart);
-                    function drawChart() {
-                        var data = google.visualization.arrayToDataTable([
-                            ['onderdeel 1', 'percentage'],
-                            ['deel',           45],
-                            ['deel',       55],
-                        ]);
-                        var options = {
-                            title: 'titel'
-                        };
-                        var chart = new google.visualization.PieChart(document.getElementById('id-van-element'));
-                        chart.draw(data, options);
-                    } 
-                ```
+
+```javascript
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['onderdeel 1', 'percentage'],
+['deel',           45],
+['deel',       55],
+]);
+var options = {
+title: 'titel'
+};
+var chart = new
+google.visualization.PieChart(document.getElementById('id-van-element'));
+chart.draw(data, options);
+} 
+```
 
 ## Dingen die ik kwijt wil over het maken van mijn website
 

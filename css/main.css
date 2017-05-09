@@ -45,7 +45,7 @@ body {
     margin: 0 auto;
     padding: 0 2em;
     max-width: 1000px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
     line-height: 1.6em;
 }
 
@@ -246,7 +246,7 @@ how it works:
 }
 
 #page-iframe {
-    height: 75em;
+    height: 60vw;
     width: 100%;
     /*box-shadow:0px 0px 40px #F60;*/
     padding-left: 10px;

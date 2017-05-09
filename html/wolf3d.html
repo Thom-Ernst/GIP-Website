@@ -28,11 +28,99 @@
         body {
             background: none;
         }
+        
+        .controlswindow{
+            display:none;
+            position:relative;
+            margin: -1px 0 0 0;
+            width:640px;
+            height:150px;
+            border: 1px solid #ffffff;
+            border-radius:2px 0 2px 2px;
+            color:#ffffff;
+            background:-moz-linear-gradient(top,  #741616,  #9e2626);
+            background:-ms-linear-gradient(top,  #741616,  #9e2626);
+            background:-o-linear-gradient(top,  #741616,  #9e2626);
+            background:-webkit-gradient(top,  #741616,  #9e2626);
+            background:-webkit-linear-gradient(top,  #741616,  #9e2626);
+            background:linear-gradient(top,  #741616,  #9e2626);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#741616', endColorstr='#9e2626');
+            z-index:1;
+            text-align:center;
+            padding:0;
+        }
+        li.controls{
+            height:25px;
+            border: 1px solid #ffffff;
+            border-radius:2px;
+            background:transparent;
+            color:#ffffff;
+            font-size:medium;
+            font-weight:bold;
+            vertical-align:middle;
+            width:25px;
+            line-height:25px;
+            list-style:none;
+            display:inline-block;
+            margin:5px;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align:center;
+            vertical-align:middle;
+        }
+
+        .wide{
+            width:40px!important;
+        }
+
+        .wider{
+            width:60px!important;
+        }
+
+        .xwide{
+            width:100px!important;
+        }
+
+        li.action{
+            background:transparent;
+            color:#ffffff;
+            font-size:small;
+            vertical-align:middle;
+            line-height:25px;
+            list-style:none;
+            display:inline-block;
+            margin:5px 5px 5px 15px;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align:center;
+        }
+
+        ul{
+            padding:0;
+        }
     </style>
+    <style></style>
 </head>
 <body>
     <h2 class="content-subhead"><img src="../img/wolf.png" style="width:40px;height:40px"> Wolfenstein 3D - Javascript Edition</h2>
     <iframe id="game-iframe" src="http://3d.wolfenstein.com/game/wolf3d.html"></iframe>
+    <div class="controlswindow" style="display: block;">
+        <ul>
+            <li class="action">Move:</li>
+            <li class="controls"><img src="http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/images/arrow-up.png"></li>
+            <li class="controls"><img src="http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/images/arrow-right.png"></li>
+            <li class="controls"><img src="http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/images/arrow-down.png"></li>
+            <li class="controls"><img src="http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/images/arrow-left.png"></li>
+            <li class="action">Run:</li>
+            <li class="controls wider">Shift</li>
+            </ul>
+            <ul>
+            <li class="action">Fire:</li>
+            <li class="controls">X</li>
+            <li class="action">Strafe:</li>
+            <li class="controls">Z</li>
+            <li class="action">Open:</li>
+            <li class="controls xwide">Space</li>
+        </ul>
+    </div>
     <aside style="font-size: 10px">© ZeniMax - 2012</aside>
 </body>
 </html>

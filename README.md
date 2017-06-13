@@ -11,8 +11,8 @@ __Wat kan je vinden in deze versie van mijn website?__
 * __Over Mezelf__
 * __IT-tapa__
 * __Stage__
-* __Disco__
-* __Game__
+* __Web App__
+* __Testopstelling__
    
 * __CSS__
 _____
